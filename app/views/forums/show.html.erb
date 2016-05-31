@@ -1,0 +1,9 @@
+<div class="panel panel-primary">
+  <div class="panel-heading"><%= @post.title %></div>
+  <div class="panel-body">
+    <%= @post.body %>
+  </div>
+</div>
+
+<%= link_to "Edit", edit_forum_path(@post), class: "btn btn-primary" %> 
+<%= link_to "Delete", forum_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>

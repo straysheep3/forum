@@ -1,0 +1,9 @@
+<% @posts.each do |post| %>
+  <h3>
+    <%= link_to post.title, forum_path(post) %>
+  </h3>
+  <p>
+    created by 
+  </p>
+  <hr>
+<% end %>
